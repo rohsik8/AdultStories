@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_image"
+        android:text="Title"/>
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toRightOf="@+id/iv_image"
+        android:src="@android:drawable/ic_menu_call"/>
+    <TextView
+        android:id="@+id/tv_location"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_location"
+        android:layout_below="@id/tv_title"
+        android:drawablePadding="@dimen/_8sdp"
+        android:text="Location"/>
+    <TextView
+        android:id="@+id/tv_amount"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_below="@id/tv_location"
+        android:ems="8"
+        android:text="Amount"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/iv_image"
+        android:text="Description"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:text="Description"/>
+    <Button
+        android:id="@+id/btn_buy"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:layout_below="@+id/tv_location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+
+</RelativeLayout>
